@@ -1,0 +1,11 @@
+Type of problem    :  Axi-symetric problem 
+Young modulus      :  2.0000000e+11  
+Poisson ratio      :  3.0000000e-01  
+Mass density       :  7.8500000e+03  
+Gravity-X          :  0.0000000e+00  
+Gravity-Y          : -9.8100000e+00  
+Boundary condition :  Neumann-X          =  0.0000000e+00,            nan : Bottom1
+Boundary condition :  Neumann-Y          =  0.0000000e+00,            nan : Bottom1
+Boundary condition :  Neumann-X          =  0.0000000e+00,            nan : Bottom2
+Boundary condition :  Neumann-Y          =  0.0000000e+00,            nan : Bottom2
+Boundary condition :  Neumann-Y          =            inf,            nan : R_column_1

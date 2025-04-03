@@ -1,0 +1,181 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"jsonFile" : "directory-.-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.6"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					]
+				},
+				{
+					"build" : "glfw",
+					"childIndexes" : 
+					[
+						2
+					],
+					"jsonFile" : "directory-glfw-63e021d6592e09ce91c7.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "glfw"
+				},
+				{
+					"build" : "glfw/src",
+					"jsonFile" : "directory-glfw.src-8c4784bd528b361e14bb.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.12"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "glfw/src",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "myFemProject",
+					"targetIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1,
+						2
+					],
+					"name" : "GLFW",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 2,
+					"id" : "glfw::@12507ebf64a5258d241e",
+					"jsonFile" : "target-glfw-17871026a362058c08de.json",
+					"name" : "glfw",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "myFem::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-myFem-660ab1507cd5049c11e0.json",
+					"name" : "myFem",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "run::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-run-9a613e9d68d71824755b.json",
+					"name" : "run",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "run1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-run1-db33fd4d649a5e3e5332.json",
+					"name" : "run1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "run2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-run2-5092db9c467d76f331bb.json",
+					"name" : "run2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "run3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-run3-eccbc020def0be34d1a6.json",
+					"name" : "run3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test1-a0c475d9ca8025cb0257.json",
+					"name" : "test1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test2-14ca6cd90028820f999c.json",
+					"name" : "test2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test3-2bfa207ff5f8e855f124.json",
+					"name" : "test3",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/louisnoirot/Desktop/Elements finis/Projet/groupe092-bbognar-lnoirot/build",
+		"source" : "/Users/louisnoirot/Desktop/Elements finis/Projet/groupe092-bbognar-lnoirot"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

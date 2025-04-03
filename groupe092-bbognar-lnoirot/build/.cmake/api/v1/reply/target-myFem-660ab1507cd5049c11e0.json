@@ -1,0 +1,245 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "myFem"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"target_link_libraries",
+			"target_compile_options",
+			"target_compile_definitions",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt",
+			"glfw/src/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 50,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 51,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 140,
+				"parent" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 77,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 78,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 69,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 12,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 16,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 48,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : " -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -mmacosx-version-min=15.3"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wdeprecated-declarations"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 6,
+					"define" : "GL_SILENCE_DEPRECATION"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "graphic"
+				}
+			],
+			"frameworks" : 
+			[
+				{
+					"backtrace" : 8,
+					"path" : "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/System/Library/Frameworks/OpenGL.framework"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 9,
+					"path" : "/Users/louisnoirot/Desktop/Elements finis/Projet/groupe092-bbognar-lnoirot/glfw/include"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "/Users/louisnoirot/Desktop/Elements finis/Projet/groupe092-bbognar-lnoirot/gmsh/gmsh-4.13.1-MacOSARM-sdk/include"
+				}
+			],
+			"language" : "C",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "glfw::@12507ebf64a5258d241e"
+		}
+	],
+	"id" : "myFem::@6890427a1f51a3e7e1df",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-L/opt/homebrew/opt/lapack/lib -L/opt/homebrew/opt/openblas/lib",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-Wl,-rpath,\"/Users/louisnoirot/Desktop/Elements finis/Projet/groupe092-bbognar-lnoirot/gmsh/gmsh-4.13.1-MacOSARM-sdk/lib\"",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "glfw/src/libglfw3.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-framework OpenGL",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "\"/Users/louisnoirot/Desktop/Elements finis/Projet/groupe092-bbognar-lnoirot/gmsh/gmsh-4.13.1-MacOSARM-sdk/lib/libgmsh.dylib\"",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "-framework Cocoa",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "-framework IOKit",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "-framework CoreFoundation",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "-framework CoreVideo",
+				"role" : "libraries"
+			}
+		],
+		"language" : "C"
+	},
+	"name" : "myFem",
+	"nameOnDisk" : "myFem",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/geo_fem.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/geo_glfem.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/geometry.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/main.c",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}
