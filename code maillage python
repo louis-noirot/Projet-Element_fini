@@ -1,0 +1,69 @@
+import gmsh
+import sys
+
+def create_mesh():
+    gmsh.initialize()
+    gmsh.model.add("rect_with_holes")
+    
+    lc = 0.5  # Smaller mesh characteristic length for finer triangles
+    
+    # Outer rectangle (centered at (0,0), width=20, height=55)
+    outer = gmsh.model.occ.addRectangle(0, 0, 0, 20, 55)
+    
+    # Holes (cut-out rectangles)
+    hole1 = gmsh.model.occ.addRectangle(2, 36, 0, 16, 17)  # Top cut-out
+    hole2 = gmsh.model.occ.addRectangle(2, 16, 0, 16, 18)   # Middle cut-out
+    hole3 = gmsh.model.occ.addRectangle(2, 0, 0, 16, 14) # Bottom cut-out
+    
+    # Perform boolean difference to subtract holes from outer shape
+    outer_dimtag, _ = gmsh.model.occ.cut([(2, outer)], [(2, hole1), (2, hole2), (2, hole3)])
+    
+    gmsh.model.occ.synchronize()
+    
+    # Set mesh element size for finer mesh
+    gmsh.model.mesh.setSize(gmsh.model.getEntities(0), lc)
+    
+    # Get the boundary curves
+    boundary = gmsh.model.getBoundary(outer_dimtag, oriented=False)
+    
+    top_curves = []
+    bottom_curves = []
+    right_curves = []
+    
+    for curve in boundary:
+        com = gmsh.model.occ.getCenterOfMass(curve[0], curve[1])
+        x, y, _ = com
+        if abs(y - 55) < 1e-3:
+            top_curves.append(curve[1])
+        elif abs(y - 0) < 1e-3:
+            bottom_curves.append(curve[1])
+        elif abs(x - 20) < 1e-3:
+            right_curves.append(curve[1])
+    
+    # Define physical groups for coloring
+    if top_curves:
+        top = gmsh.model.addPhysicalGroup(1, top_curves)
+        gmsh.model.setColor([(1, c) for c in top_curves], 0, 0, 0)  # Black
+    
+    if bottom_curves:
+        bottom = gmsh.model.addPhysicalGroup(1, bottom_curves)
+        gmsh.model.setColor([(1, c) for c in bottom_curves], 255, 242, 0)  # Yellow
+    
+    if right_curves:
+        right = gmsh.model.addPhysicalGroup(1, right_curves)
+        gmsh.model.setColor([(1, c) for c in right_curves], 255, 0, 0)  # Red
+    
+    # Generate mesh
+    gmsh.model.mesh.generate(2)
+    
+    # Save the mesh
+    gmsh.write("mesh.msh")
+    
+    # Launch GUI if needed
+    if '-nopopup' not in sys.argv:
+        gmsh.fltk.run()
+    
+    gmsh.finalize()
+
+if __name__ == "__main__":
+    create_mesh()
