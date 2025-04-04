@@ -1,0 +1,10 @@
+⏱️  Benchmark (FULL solver) :
+   - Solve time              :     8.3220 s
+   - Force recovery time     :     0.0245 s
+   - Integration time        :     0.0001 s
+   - Total FEM pipeline      :     8.3466 s
+ ==== Minimum displacement          :  0.0000000e+00 [m] 
+ ==== Maximum displacement          :  2.9717494e-02 [m] 
+ ==== Global horizontal force       :  1.4000000e+08 [N] 
+ ==== Global vertical force         :  2.2433469e+08 [N] 
+ ==== Weight                        :  2.4334686e+07 [N] 

@@ -4,7 +4,7 @@
 # compile C with /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc
 C_DEFINES = -D_GLFW_USE_CONFIG_H
 
-C_INCLUDES = -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/System/Library/Frameworks -I/Users/louisnoirot/Desktop/Projet_ElementsFinis_ok/glfw/include -I/Users/louisnoirot/Desktop/Projet_ElementsFinis_ok/glfw/src -I/Users/louisnoirot/Desktop/Projet_ElementsFinis_ok/build/glfw/src
+C_INCLUDES = -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk/System/Library/Frameworks -I"/Users/louisnoirot/Desktop/Elements finis/Projet/Projet_ElementsFinis_ok/glfw/include" -I"/Users/louisnoirot/Desktop/Elements finis/Projet/Projet_ElementsFinis_ok/glfw/src" -I"/Users/louisnoirot/Desktop/Elements finis/Projet/Projet_ElementsFinis_ok/build/glfw/src"
 
 C_FLAGSarm64 =  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -mmacosx-version-min=15.3 -fPIC -Wall
 

@@ -1,0 +1,12 @@
+Type of problem    :  Planar stresses  
+Type of element    :  Triangle 
+Young modulus      :  2.1100000e+11  
+Poisson ratio      :  3.0000000e-01  
+Mass density       :  7.8500000e+03  
+Gravity         :  9.8100000e+00  
+Boundary condition :  Neumann-X          = -1.0000000e+07,            nan : R_column_1
+Boundary condition :  Neumann-Y          = -1.0000000e+05,            nan : 3_beam_T
+Boundary condition :  Dirichlet-X        =  0.0000000e+00,            nan : Bottom1
+Boundary condition :  Dirichlet-Y        =  0.0000000e+00,            nan : Bottom1
+Boundary condition :  Dirichlet-X        =  0.0000000e+00,            nan : Bottom2
+Boundary condition :  Dirichlet-Y        =  0.0000000e+00,            nan : Bottom2
